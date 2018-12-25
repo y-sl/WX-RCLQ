@@ -1,0 +1,60 @@
+#app
+  height 100%
+.wrap
+  position relative
+  height 100%
+  padding-left 250px
+  .nav-menu-wrapper
+    width 250px
+    height 100%
+    margin-left -250px
+    font-size 18px
+#map
+  position absolute
+  top 0
+  left 250px
+  width calc(100% - 250px)
+  height 100%
+  background-color #08304a
+#router-view
+  position absolute
+  top 70px
+  left 250px
+  z-index 999
+  width 400px
+  height calc(100% - 70px - 30px)
+  padding 15px 20px
+  background-color #23292e
+  font-size 14px
+@media screen and (max-width: 1366px)
+  .wrap
+    padding-left 200px
+    .nav-menu-wrapper
+      width 200px
+      margin-left -200px
+      font-size 16px
+  #map
+    width calc(100% - 200px)
+    left 200px
+  #router-view
+    left 200px
+    width 340px
+    padding 15px 10px
+    font-size 14px
+@media screen and (max-width: 1024px)
+  .wrap
+    .nav-menu-wrapper
+      font-size 14px
+// info-card-item 样式
+.item-wrap
+  position relative
+  .item-type
+    position absolute
+    top 0
+    right 5px
+    color #fff
+.item
+  padding 3px 5px
+  color #fff
+  .item-title
+    color #999
