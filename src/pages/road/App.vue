@@ -1,5 +1,6 @@
 <template>
-  <div id="road">
-    <h1>road1133</h1>
+  <div id="app"
+       style="height: 100%">
+    <router-view></router-view>
   </div>
 </template>
