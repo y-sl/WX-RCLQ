@@ -1,5 +1,5 @@
 <template>
-  <div class="analyze">
+  <div class="layer-analyze">
     <Collapse>
       <collapse-item title="参数设置"
                      :index="0"
@@ -20,7 +20,7 @@
           <el-form-item label="起止日期">
             <el-date-picker type="daterange"
                             size="small"
-                            v-model="value"
+                            v-model="time"
                             align="right"
                             unlink-panels
                             value-format="yyyy-MM-DD"
@@ -100,16 +100,18 @@
   </div>
 </template>
 
-<script type="text/ecmascript-6">
-// import { Collapse, CollapseItem } from "@/common/components/collapse/index";
+<script>
 import Collapse from '@/components/collapse/Collapse'
 import CollapseItem from '@/components/collapse/CollapseItem'
-// import DatePicker from 'vue2-datepicker'
 export default {
+  components: {
+    Collapse,
+    CollapseItem
+  },
   data () {
     return {
-      time1: '',
       index: -1,
+      time: '',
       value: '',
       pickerOptions: {
         shortcuts: [{
@@ -150,14 +152,6 @@ export default {
       ]
     }
   },
-  components: {
-    // DatePicker,
-    Collapse,
-    CollapseItem
-  },
-  mounted () {
-    console.log(this.$refs.itemTitle)
-  },
   methods: {
     update (index) {
       this.index = Number(index)
@@ -168,5 +162,5 @@ export default {
 
 <style lang="stylus">
 .el-date-range-picker
-  left 271px !important
+  left 20px !important
 </style>

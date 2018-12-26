@@ -3,8 +3,8 @@
     <Collapse>
       <collapse-item title="参数设置"
                      :index="0"
-                     :selected="index2"
-                     @change="update2"
+                     :selected="index"
+                     @change="update"
                      icon="icon-hcm-set-copy">
         <div class='params-list-item'>
           <div class='item-lable lf'>
@@ -99,8 +99,8 @@
       </collapse-item>
       <collapse-item title="事故参数"
                      :index="1"
-                     :selected="index2"
-                     @change="update2"
+                     :selected="index"
+                     @change="update"
                      icon="icon-traffic">
         <div class='params-list-item'>
           <div class='item-lable lf'>
@@ -359,7 +359,7 @@ export default {
   data () {
     return {
       time1: '',
-      index2: -1
+      index: -1
     }
   },
   components: {
@@ -371,8 +371,8 @@ export default {
     console.log(this.$refs.itemTitle)
   },
   methods: {
-    update2 (index) {
-      this.index2 = Number(index)
+    update (index) {
+      this.index = Number(index)
     }
   }
 }
