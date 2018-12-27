@@ -1,5 +1,12 @@
 import Vue from 'vue'
-import { Button, Select, Form, FormItem, DatePicker, Option } from 'element-ui'
+import {
+  Button,
+  Select,
+  Form,
+  FormItem,
+  DatePicker,
+  Option
+} from 'element-ui'
 
 Vue.use(Button)
 Vue.use(Select)
