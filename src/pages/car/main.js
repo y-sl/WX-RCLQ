@@ -7,7 +7,7 @@ import '@/plugins/element.js'
 import '@/assets/styles/common.styl'
 import '@/assets/styles/reset.styl'
 import '@/assets/styles/element.styl'
-
+console.log(process.env)
 Vue.config.productionTip = false
 
 new Vue({
