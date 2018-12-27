@@ -142,3 +142,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+.el-date-range-picker
+  left 271px !important
+</style>
