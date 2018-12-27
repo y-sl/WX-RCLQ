@@ -8,7 +8,7 @@
                        class="road button"
                        :class="{active: isSelected}">
             <i class="iconfont icon-daoluguanli"></i>
-            <span>黑点道路管路</span>
+            <span>黑点道路管理</span>
           </router-link>
           <router-link to="/layeranalyze"
                        class="analyze button">

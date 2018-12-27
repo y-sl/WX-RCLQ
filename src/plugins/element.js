@@ -5,7 +5,9 @@ import {
   Form,
   FormItem,
   DatePicker,
-  Option
+  Option,
+  Table,
+  TableColumn
 } from 'element-ui'
 
 Vue.use(Button)
@@ -14,3 +16,5 @@ Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(DatePicker)
 Vue.use(Option)
+Vue.use(Table)
+Vue.use(TableColumn)

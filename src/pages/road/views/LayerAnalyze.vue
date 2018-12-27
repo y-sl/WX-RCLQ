@@ -163,4 +163,7 @@ export default {
 <style lang="stylus">
 .el-date-range-picker
   left 20px !important
+.layer-analyze
+  .el-form-item
+    margin-bottom 13px !important
 </style>

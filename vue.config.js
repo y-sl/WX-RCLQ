@@ -1,5 +1,6 @@
 let path = require('path')
 let glob = require('glob')
+console.log(process.env.NODE_ENV)
 // 配置pages多页面获取当前文件夹下的html和js
 function getEntry (globPath) {
   let entries = {}
@@ -12,11 +13,11 @@ function getEntry (globPath) {
 
   glob.sync(globPath).forEach(function (entry) {
     basename = path.basename(entry, path.extname(entry))
-    console.log(entry)
+    // console.log(entry)
     tmp = entry.split('/').splice(-3)
     pathname = basename // 正确输出js和html的路径
 
-    console.log(pathname)
+    // console.log(pathname)
     entries[pathname] = {
       entry: 'src/' + tmp[0] + '/' + tmp[1] + '/main.js',
       template: 'src/' + tmp[0] + '/' + tmp[1] + '/' + tmp[2],
@@ -31,17 +32,17 @@ let pages = getEntry('./src/pages/**?/*.html')
 // 配置end
 module.exports = {
   // lintOnSave: false, // 禁用eslint
-  // productionSourceMap: false,
-  pages
-  // devServer: {
-  //   index: 'index.html', // 默认启动serve 打开index页面
-  //   open: process.platform === 'darwin',
-  //   host: '',
-  //   port: 8080,
-  //   https: false,
-  //   hotOnly: false,
-  //   proxy: null // 设置代理
-  // },
+  productionSourceMap: true,
+  pages,
+  devServer: {
+    index: 'index.html', // 默认启动serve 打开index页面
+    open: process.platform === 'darwin',
+    host: '0.0.0.0',
+    port: 8080,
+    https: false,
+    hotOnly: false,
+    proxy: null // 设置代理
+  }
   // // css相关配置
   // css: {
   //   extract: false, // 是否使用css分离插件 ExtractTextPlugin //打包时改为true
