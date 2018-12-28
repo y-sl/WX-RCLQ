@@ -98,20 +98,3 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.user
-  position fixed
-  left 0
-  bottom 0
-  z-index 1000
-  width 250px
-  height 35px
-  color #fff
-  line-height 35px
-  text-align center
-  // margin-top -35px
-  background-color #4a5661
-  @media screen and (max-width: 1366px)
-    &
-      width 200px
-</style>
