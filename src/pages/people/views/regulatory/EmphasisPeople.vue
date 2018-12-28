@@ -6,7 +6,7 @@
       </div>
       <el-form ref="form"
                :model="form"
-               label-width="80px">
+               label-width="68px">
         <el-form-item label="领证机构">
           <el-select v-model="form.region"
                      placeholder="请选择">
@@ -61,7 +61,7 @@ import InfoCard from '@/components/InfoCard/InfoCard'
 export default {
   data () {
     return {
-      height: 'calc(100% - 30px - 35px - 20px - 20px)',
+      height: 'calc(100% - 64px - 35px - 20px - 20px)',
       form: {
         region: ''
       },
@@ -124,10 +124,5 @@ export default {
 
 <style lang="stylus" scoped>
 .search-start >>> .el-input__inner
-  height 30px
-.item-title
-  text-align center
-  color #fff
-.el-form
-  padding 5px 0px
+  width 330px !important
 </style>

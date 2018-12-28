@@ -2,7 +2,7 @@
   <div class="company">
     <el-form ref="form"
              :model="form"
-             label-width="80px">
+             label-width="68px">
       <el-form-item label="企业类型">
         <el-select v-model="form.region"
                    placeholder="请选择">
@@ -100,5 +100,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
+.el-input__inner
+  width 330px !important
 </style>
