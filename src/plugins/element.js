@@ -3,6 +3,7 @@ import {
   Button,
   Select,
   Form,
+  Input,
   FormItem,
   DatePicker,
   Option,
@@ -12,6 +13,7 @@ import {
 
 Vue.use(Button)
 Vue.use(Select)
+Vue.use(Input)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(DatePicker)

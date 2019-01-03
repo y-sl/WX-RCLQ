@@ -61,47 +61,43 @@ export default {
           sub: [
             {
               title: '车辆实时定位',
-              url: ''
+              url: 'carlocation'
             },
             {
               title: '轨迹查询',
-              url: ''
+              url: 'tracksearch'
             },
             {
               title: '轨迹异常查询',
               sub: [
                 {
                   title: '三天未出行',
-                  url: ''
+                  url: 'nottravel'
                 },
                 {
                   title: '坐标漂移',
-                  url: ''
-                },
-                {
-                  title: '坐标漂移',
-                  url: ''
+                  url: 'coordinateskewing'
                 },
                 {
                   title: '坐标不匹配',
-                  url: ''
+                  url: 'coordinatenomatch'
                 }
               ]
             },
             {
               title: '落脚点分析',
-              url: ''
+              url: 'stanceanalyze'
             },
             {
               title: '空间查询',
-              url: ''
+              url: 'spacesearch'
             }
           ]
         },
         {
           title: '聚集预警',
           icon: 'icon-jujiyujing',
-          url: ''
+          url: 'gatherwarn'
         },
         {
           title: '异常预警',
@@ -109,19 +105,19 @@ export default {
           sub: [
             {
               title: '一证多车',
-              url: ''
+              url: 'morecar'
             },
             {
               title: '违法大户',
-              url: ''
+              url: 'moreillegal'
             },
             {
               title: '检验预警',
-              url: ''
+              url: 'testwarn'
             },
             {
               title: '审验超期预警',
-              url: ''
+              url: 'overduewarn'
             }
           ]
         },
@@ -131,22 +127,22 @@ export default {
           sub: [
             {
               title: '实时违法预警',
-              url: ''
+              url: 'illegalwarn'
             },
             {
               title: '时间预警',
-              url: ''
+              url: 'timewarn'
             },
             {
               title: '超速预警',
-              url: ''
+              url: 'speedwarn'
             }
           ]
         },
         {
           title: '实时事故预警',
           icon: 'icon-traffic',
-          url: ''
+          url: 'accidentwarn'
         },
         {
           title: '综合查询分析',
@@ -158,6 +154,8 @@ export default {
   },
   methods: {
     toggleRouterView (bool) {
+      console.log(1)
+      console.log(bool)
       this.isShow = bool
       if (bool) {
         this.isShow = true

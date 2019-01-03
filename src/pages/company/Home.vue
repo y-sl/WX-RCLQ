@@ -48,6 +48,7 @@ export default {
               title: '同一地址',
               url: 'address'
             }
+            }
           ]
         },
         {

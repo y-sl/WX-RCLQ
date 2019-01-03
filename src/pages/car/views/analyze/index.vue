@@ -97,6 +97,9 @@
         </el-form>
       </collapse-item>
     </Collapse>
+    <div class="el-form-item__content">
+      <el-button icon="el-icon-search">查询</el-button>
+    </div>
   </div>
 </template>
 
