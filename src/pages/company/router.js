@@ -16,6 +16,34 @@ const router = new Router({
       name: 'personalcar',
       component: () => import('./views/backcar/PersonalCar')
     }, {
+      path: 'legalPerson',
+      name: 'legalPerson',
+      component: () => import('./views/backcar/LegalPerson')
+    }, {
+      path: 'address',
+      name: 'address',
+      component: () => import('./views/backcar/Address')
+    }, {
+      path: 'illegalProportion',
+      name: 'illegalProportion',
+      component: () => import('./views/wanring/IllegalProportion')
+    }, {
+      path: 'accidentRate',
+      name: 'accidentRate',
+      component: () => import('./views/wanring/AccidentRate')
+    }, {
+      path: 'hazardRate',
+      name: 'hazardRate',
+      component: () => import('./views/wanring/HazardRate')
+    }, {
+      path: 'inspectionRate',
+      name: 'inspectionRate',
+      component: () => import('./views/wanring/InspectionRate')
+    }, {
+      path: 'rejectionRate',
+      name: 'rejectionRate',
+      component: () => import('./views/wanring/RejectionRate')
+    }, {
       path: 'analyze',
       name: 'analyze',
       component: () => import('./views/analyze')

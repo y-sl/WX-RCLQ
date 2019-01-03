@@ -6,7 +6,7 @@
       </div>
       <el-form ref="form"
                :model="form"
-               label-width="80px">
+               label-width="68px">
         <el-form-item label="领证机构">
           <el-select v-model="form.region"
                      placeholder="请选择">

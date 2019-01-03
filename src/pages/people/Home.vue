@@ -37,7 +37,7 @@ export default {
             },
             {
               title: '重点车辆驾驶人',
-              url: '/'
+              url: 'emphasiscar'
             }
           ]
         },
@@ -47,15 +47,15 @@ export default {
           sub: [
             {
               title: '一车多证',
-              url: '/'
+              url: 'carmore'
             },
             {
               title: '违法大户',
-              url: '/'
+              url: 'illegalclient'
             },
             {
               title: '审核逾期',
-              url: '/'
+              url: 'reviewforecast'
             }
           ]
         },
@@ -67,7 +67,7 @@ export default {
         {
           title: '实时事故预警',
           icon: 'icon-traffic',
-          url: ''
+          url: 'accident'
         },
         {
           title: '综合研判分析',
