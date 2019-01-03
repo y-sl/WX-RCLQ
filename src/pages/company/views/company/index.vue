@@ -100,7 +100,3 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-.el-input__inner
-  width 330px !important
-</style>

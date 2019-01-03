@@ -2,7 +2,7 @@
   <div id="company"
        class="wrap">
     <div class="nav-menu-wrapper">
-      <y-logo logo="people" />
+      <y-logo logo="company" />
       <nav-menu :menus='menus'
                 @routerShow="toggleRouterView" />
       <div class="user">用户登陆</div>
@@ -42,11 +42,12 @@ export default {
             },
             {
               title: '同一法人',
-              url: ''
+              url: 'legalPerson'
             },
             {
               title: '同一地址',
-              url: ''
+              url: 'address'
+            }
             }
           ]
         },
@@ -56,23 +57,23 @@ export default {
           sub: [
             {
               title: '违法比例',
-              url: ''
+              url: 'illegalProportion'
             },
             {
               title: '事故比例',
-              url: ''
+              url: 'accidentRate'
             },
             {
               title: '隐患比例',
-              url: ''
+              url: 'hazardRate'
             },
             {
               title: '逾期未检验比例',
-              url: ''
+              url: 'inspectionRate'
             },
             {
               title: '报废率',
-              url: ''
+              url: 'rejectionRate'
             }
           ]
         },

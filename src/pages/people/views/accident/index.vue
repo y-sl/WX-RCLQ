@@ -7,58 +7,53 @@
       <el-form ref="form"
                :model="form"
                label-width="68px">
-        <el-form-item label="采集机构">
-          <el-select v-model="form.region"
-                     placeholder="请选择">
-            <el-option label="全省"
-                       value="全省"></el-option>
-            <el-option label="全市"
-                       value="全市"></el-option>
-          </el-select>
-        </el-form-item>
         <el-form-item label="处理机构">
           <el-select v-model="form.region"
                      placeholder="请选择">
             <el-option label="全省"
                        value="全省"></el-option>
-            <el-option label="全市"
-                       value="全市"></el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item label="领证机构">
+          <el-select v-model="form.region"
+                     placeholder="请选择">
+            <el-option label="全省"
+                       value="全省"></el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item label="事故级别">
+          <el-select v-model="form.region"
+                     placeholder="请选择">
+            <el-option label="多少"
+                       value="多少"></el-option>
           </el-select>
         </el-form-item>
         <el-form-item label="人员类型">
           <el-select v-model="form.region"
                      placeholder="请选择">
-            <el-option label="多少"
-                       value="多少"></el-option>
-            <el-option label="稍多"
-                       value="稍多"></el-option>
+            <el-option label="全省"
+                       value="全省"></el-option>
           </el-select>
         </el-form-item>
-        <el-form-item label="处理状态">
+        <el-form-item label="死亡人数">
           <el-select v-model="form.region"
                      placeholder="请选择">
             <el-option label="全省"
                        value="全省"></el-option>
-            <el-option label="全市"
-                       value="全市"></el-option>
           </el-select>
         </el-form-item>
-        <el-form-item label="缴款状态">
+        <el-form-item label="受伤人数">
           <el-select v-model="form.region"
                      placeholder="请选择">
             <el-option label="全省"
                        value="全省"></el-option>
-            <el-option label="全市"
-                       value="全市"></el-option>
           </el-select>
         </el-form-item>
-        <el-form-item label="罚款金额">
+        <el-form-item label="事故原因">
           <el-select v-model="form.region"
                      placeholder="请选择">
-            <el-option label="全省"
-                       value="全省"></el-option>
-            <el-option label="全市"
-                       value="全市"></el-option>
+            <el-option label="其他"
+                       value="其他"></el-option>
           </el-select>
         </el-form-item>
       </el-form>
