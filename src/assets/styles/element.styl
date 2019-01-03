@@ -33,13 +33,19 @@
       background-color #2e86ce !important
 // input 样式
 .el-input__inner
-  width 300px !important
+  width 330px !important
   height 30px !important
   background-color #4a5661 !important
   border-color #4a5661 !important
   @media screen and (max-width: 1366px)
     &
       width 240px !important
+.big
+  .el-input__inner
+    width 300px !important
+    @media screen and (max-width: 1366px)
+      &
+        width 240px !important
 input
   background-color #4a5661
   color #fff !important
